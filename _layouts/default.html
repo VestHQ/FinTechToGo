@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+      <div class="main-container">
+        <div class="fixed-container">
+          {% include articles.html %}
+          <section>
+            {% include newsletter.html %}
+            {% include sponsor.html %}
+          </section>
+        </div>
+      </div>
+
+      {{ content }}
+
+    </div>
+    {% include analytics.html %}
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.newsletter
+  background-color: lightyellow
+
+form
+  padding: 20px
+  margin: 0 auto
+  max-width: 600px
+
+form .row
+  margin-bottom: 25px
+  position: relative
+  overflow: hidden
+
+form input[type="text"], form input[type="password"], form textarea
+  width: 100%
+  height: 40px
+  padding: 10px 10px 10px 90px
+  box-sizing: border-box
+  border: 1px solid #ccc
+  color: #333
+  border-radius: 3px
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+
+form textarea
+  height: auto
+  min-height: 200px
+  padding: 50px 10px 10px 10px
+
+form input[type="text"] + label, form input[type="password"] + label, form textarea + label
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  height: 40px
+  line-height: 40px
+  font-size: 12px
+  font-weight: bold
+  width: 80px
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1)
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: .05em
+  color: white
+  background: black
+  border-radius: 3px 0 0 3px
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -webkit-transform: translateZ(0) translateX(0)
+    transform: translateZ(0) translateX(0)
+
+form textarea + label
+  width: 100%
+  border-radius: 3px 3px 0 0
+
+form input[type="text"]:focus, form input[type="password"]:focus
+  padding-left: 10px
+
+form textarea:focus
+  padding-top: 10px
+
+form input[type="text"]:focus + label, form input[type="password"]:focus + label
+  -webkit-transform: translateZ(0) translateX(-100%)
+    transform: translateZ(0) translateX(-100%)
+
+form textarea:focus + label
+  -webkit-transform: translateZ(0) translateY(-100%)
+    transform: translateZ(0) translateY(-100%)
