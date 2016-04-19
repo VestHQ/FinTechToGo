@@ -4,7 +4,7 @@ article-link: http://www.google.com
 article-title: The Rise and Fall of Banks
 article-author: Anuraag Tripathi
 article-lengh: 02m
-tag: podcast
+tag: [podcast]
 ---
 
 Keep this test template for reference.
