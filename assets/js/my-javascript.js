@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
-  $('#id')
+  $('.expand-one').click(function(){
+    $('.content-one').slideToggle('slow');
+  });
 
 });
