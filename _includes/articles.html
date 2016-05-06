@@ -6,7 +6,20 @@
 
       <div class="details">
         <div class="lengh">{{ article.article-lengh }}</div>
-        <a class="tag" href="#">{{ article.category }}</a>
+        <a class="tag" href="#">{{ article.tag }}</a>
+
+        <!-- {% if article.category == 'article' %}
+            <a class=“tag” href=“#”>{{ article.category }}</a>
+          {% elsif article.category == 'podcast' %}
+            <a class=“tag” href=“#”>{{ article.category }}</a>
+          {% elsif article.category == 'infographic' %}
+            <a class=“tag” href=“#”>{{ article.category }}</a>
+          {% elsif article.category == 'report' %}
+            <a class=“tag” href=“#”>{{ article.category }}</a>
+          {% elsif article.category == 'video' %}
+            <a class=“tag” href=“#”>{{ article.category }}</a>
+        {% endif %} -->
+
       </div>
 
       <a class="source" href="{{ article.article-link }}">
