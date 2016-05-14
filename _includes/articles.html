@@ -8,15 +8,15 @@
         <div class="lengh">{{ article.article-lengh }}</div>
         <!-- <a class="tag" href="#">{{ article.tag }}</a> -->
         {% if article.tag == "article" %}
-          <a class="tag" href="#">{{ article.tag }}</a>
+          <a class="article tag" href="#">{{ article.tag }}</a>
           {% elsif article.tag == "podcast" %}
-            <a class="tag" href="#">{{ article.tag }}</a>
+            <a class="podcast tag" href="#">{{ article.tag }}</a>
           {% elsif article.tag == "infograhic" %}
-            <a class="tag" href="#">{{ article.tag }}</a>
+            <a class="infographic tag" href="#">{{ article.tag }}</a>
           {% elsif article.tag == "report" %}
-            <a class="tag" href="#">{{ article.tag }}</a>
+            <a class="report tag" href="#">{{ article.tag }}</a>
           {% elsif article.tag == "video" %}
-            <a class="tag" href="#">{{ article.tag }}</a>
+            <a class="video tag" href="#">{{ article.tag }}</a>
         {% endif %}
       </div>
 
