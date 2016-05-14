@@ -1,7 +1,11 @@
 <!-- Meta -->
+<title>{{site.title}}</title>
+<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
 <meta charset="utf-8" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-<!-- The sylsheet needs a conditional if statement -->
+<!-- The sylsheet needs a conditional if statement based on layout -->
+{{ if layout == "default" }}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" media="screen" title="CSS" charset="utf-8">
+{{ endif }}
