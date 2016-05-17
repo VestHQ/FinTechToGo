@@ -15,37 +15,33 @@ header:after
   display: table
   clear: both
 
-.header-container
-  width: 100%
-
 h1
   float: left
   width: 33.333%
+  display: inline-block
+  text-align: left
 
 nav
   float: left
   width: 33.333%
+  display: inline-block
   text-align: center
 
-header .header-container div
+header div
   float: left
   width: 33.333%
-
-header .header-container img
-  height: 10px
-  width: 10px
-
-.header-container > div
+  display: inline-block
   text-align: right
 
-.content-one
-  display: none
+.details img
+  height: 10px
+  width: 10px
 
 .dropdown
   position: relative
   display: inline-block
   text-align: left
-  width: 33.333%
+  width: 10%
 
 .dropdown-text
   cursor: pointer
@@ -69,11 +65,9 @@ header .header-container img
     border-width: 5px 4px 0 4px
     border-color: lightgreen transparent transparent transparent
   color: #333
-  /*text-shadow: 0 1px black;
 
 .dropdown-content a
   color: #333
-  /*text-shadow: 0 1px black;
 
 .dropdown-toggle
   font-size: 0
@@ -99,21 +93,19 @@ header .header-container img
   transition: all .25s ease
   list-style-type: none
   position: absolute
-  /*top: 32px;
   bottom: 100%
   padding: 0
   margin: 0
   opacity: 0
   visibility: hidden
   border-radius: 3px
-  /*text-indent: 10px;
   line-height: 32px
   background-color: purple
   border: 1px solid indigo
   color: red
   a
     display: block
-    padding: 50px
+    padding: 25px
     &:hover
       background: pink
 
@@ -127,7 +119,6 @@ header .header-container img
 .dropdown-content:hover, .dropdown-toggle:focus ~ .dropdown-content
   opacity: 1
   visibility: visible
-  /*top: 42px;
   bottom: 100%
 
 .dropdown-content
