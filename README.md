@@ -1,2 +1,2 @@
 # FinTechToGo
-The fastest way to stay upto date on FinTech
+The fastest way to stay up to date on FinTech
