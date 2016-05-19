@@ -1,13 +1,13 @@
 // Site Header
-
 header
   position: fixed
   bottom: 0
   left: 0
   z-index: 1
   width: 100%
-  background-color: lightgrey
-  height: 60px
+  padding-bottom: 20px
+  height: 40px
+  background-color: grey
   -webkit-transform: translate3d(0, 0, 0)
 
 header:after
@@ -15,59 +15,55 @@ header:after
   display: table
   clear: both
 
+.header-container
+  margin-top: 10px
+
 h1
   float: left
   width: 33.333%
   display: inline-block
   text-align: left
 
-nav
+.search
   float: left
   width: 33.333%
   display: inline-block
   text-align: center
 
-header div
-  float: left
-  width: 33.333%
-  display: inline-block
+.details
   text-align: right
-
-.details img
-  height: 10px
-  width: 10px
 
 .dropdown
   position: relative
   display: inline-block
   text-align: left
-  width: 10%
+  width: 100px
+  bottom: 20px
 
 .dropdown-text
   cursor: pointer
   position: absolute
   text-indent: 10px
   line-height: 32px
-  background-color: lightblue
-  border: 1px solid red
-  border-radius: 3px
+  background-color: lightgrey
+  border-bottom: 1.3px dashed black
   box-shadow: 0 1px 0 rgba(194, 180, 234, 0.9) inset, 0 1px 3px rgba(106, 168, 82, 0.1)
   width: 100%
+  color: black
   &:after
     position: absolute
     right: 6px
     top: 15px
     bottom: 100%
-    content: ''
+    content: ""
     width: 0px
     height: 0px
     border-style: solid
     border-width: 5px 4px 0 4px
-    border-color: lightgreen transparent transparent transparent
-  color: #333
+    border-color: black transparent transparent transparent
 
 .dropdown-content a
-  color: #333
+  color: black
 
 .dropdown-toggle
   font-size: 0
@@ -86,11 +82,11 @@ header div
     outline: 0
 
 .dropdown-content
-  -webkit-transition: all .25s ease
-  -moz-transition: all .25s ease
-  -ms-transition: all .25s ease
-  -o-transition: all .25s ease
-  transition: all .25s ease
+  -webkit-transition: all 0.25s ease
+  -moz-transition: all 0.25s ease
+  -ms-transition: all 0.25s ease
+  -o-transition: all 0.25s ease
+  transition: all 0.25s ease
   list-style-type: none
   position: absolute
   bottom: 100%
@@ -122,9 +118,13 @@ header div
   bottom: 100%
 
 .dropdown-content
-  li
-    display: inline-block
-    margin: 0px auto 0px auto
   white-space: nowrap
   left: 50%
   transform: translateX(-50%)
+  li
+    display: inline-block
+    margin: 0px auto 0px auto
+
+.details img
+  height: 10px
+  width: 10px
