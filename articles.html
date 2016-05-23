@@ -5,23 +5,34 @@ permalink: /tags/articles.html
 {% for article in site.posts limit:5 %}
   <section>
     {% if article.tag == "article" %}
-    <article class="media">
-      <span></span>
+      <article class="media">
+        <span></span>
 
-      <div class="details">
-        <div class="lengh">{{ article.article-lengh }}</div>
-        <a class="article tag" href="#">{{ article.tag }}</a>
-      </div>
+        <div class="details">
+          <div class="lengh">{{ article.article-lengh }}</div>
 
-      <a class="source" href="{{ article.article-link }}">
-        <div class="title">
-          {{ article.article-title }}
+          {% if article.tag == "article" %}
+            <a class="article tag" href="/tags/articles.html">{{ article.tag }}</a>
+            {% elsif article.tag == "podcast" %}
+              <a class="podcast tag" href="/tags/podcasts.html">{{ article.tag }}</a>
+            {% elsif article.tag == "infographic" %}
+              <a class="infographic tag" href="/tags/infographics.html">{{ article.tag }}</a>
+            {% elsif article.tag == "report" %}
+              <a class="report tag" href="/tags/reports.html">{{ article.tag }}</a>
+            {% elsif article.tag == "video" %}
+              <a class="video tag" href="/tags/videos.html">{{ article.tag }}</a>
+          {% endif %}
         </div>
-        <div class="author">
-          {{ article.article-author }}
-        </div>
-      </a>
-    </article>
+
+        <a class="source" href="{{ article.article-link }}">
+          <div class="title">
+            {{ article.article-title }}
+          </div>
+          <div class="author">
+            {{ article.article-author }}
+          </div>
+        </a>
+      </article>
     {% endif %}
   </section>
 {% endfor %}
