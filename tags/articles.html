@@ -2,4 +2,24 @@
 layout: default
 ---
 
-<!-- articles -->
+<section>
+  {% for post in site.tags ['article'] limit:5 %}
+  <article class="media">
+    <span></span>
+
+    <div class="details">
+      <div class="lengh">{{ article.article-lengh }}</div>
+      <a class="article tag" href="#">{{ article.tag }}</a>
+    </div>
+
+    <a class="source" href="{{ article.article-link }}">
+      <div class="title">
+        {{ article.article-title }}
+      </div>
+      <div class="author">
+        {{ article.article-author }}
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</section>
