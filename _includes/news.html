@@ -6,17 +6,17 @@
 
       <div class="details">
         <div class="lengh">{{ article.article-lengh }}</div>
-        
+
         {% if article.tag == "article" %}
-          <a class="article tag" href="#">{{ article.tag }}</a>
+          <a class="article tag" href="/tags/articles.html">{{ article.tag }}</a>
           {% elsif article.tag == "podcast" %}
-            <a class="podcast tag" href="#">{{ article.tag }}</a>
+            <a class="podcast tag" href="/tags/podcasts.html">{{ article.tag }}</a>
           {% elsif article.tag == "infograhic" %}
-            <a class="infographic tag" href="#">{{ article.tag }}</a>
+            <a class="infographic tag" href="/tags/infogrpahics.html">{{ article.tag }}</a>
           {% elsif article.tag == "report" %}
-            <a class="report tag" href="#">{{ article.tag }}</a>
+            <a class="report tag" href="/tags/reports.html">{{ article.tag }}</a>
           {% elsif article.tag == "video" %}
-            <a class="video tag" href="#">{{ article.tag }}</a>
+            <a class="video tag" href="/tags/videos.html">{{ article.tag }}</a>
         {% endif %}
       </div>
 
