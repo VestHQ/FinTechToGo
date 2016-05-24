@@ -3,8 +3,8 @@ layout: default
 permalink: /tags/videos.html
 ---
 {% for article in site.posts limit:5 %}
-  <section>
-    {% if article.tag == "video" %}
+  {% if article.tag == "video" %}
+    <section>
       <article class="media">
         <span></span>
 
@@ -33,6 +33,6 @@ permalink: /tags/videos.html
           </div>
         </a>
       </article>
-    {% endif %}
-  </section>
+    </section>
+  {% endif %}
 {% endfor %}
