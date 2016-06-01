@@ -8,17 +8,13 @@
       {% include footer.html %}
       <div class="main-container">
         <div class="fixer-container">
-          {{ content }}
-          <section>
-            {% include newsletter.html %}
-            {% include sponsor.html %}
-          </section>
+          {% include newsletter.html %}
+            {{ content }}
+          {% include sponsor.html %}
         </div>
       </div>
       {% include header.html %}
     </div>
-
     {% include scripts.html %}
-
   </body>
 </html>

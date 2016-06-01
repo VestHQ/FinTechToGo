@@ -20,27 +20,36 @@ html, body
   float: left
   position: relative
 
-section
+section.articles
   float: left
-  width: 66.66666%
+  width: 66.6666%
   margin-bottom: 30px
 
-section:last-child
+section.newsletter
   float: right
-  width: 33.33333%
+  width: 33.3333%
   margin-top: 10%
+
+section.sponsor
+  float: right
+  width: 33.3333%
 
 // Containers Media Queries
 @media screen and (max-width: 800px)
   .fixer-container
     float: none
 
-  section
+  section.articles
     float: none
     margin: 0 auto
     width: 100%
 
-  section:last-child
-    margin: 10px auto
+  section.newsletter
     float: none
-    width: 66.666%
+    margin: 0 auto
+    width: 80%
+
+  section.sponsor
+    float: none
+    margin: 0 auto
+    width: 80%
