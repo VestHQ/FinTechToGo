@@ -8,6 +8,7 @@ sass:
   style: compressed
 
 gems: [bourbon, neat]
+include: ['.htaccess']
 
 # Site settings
 title: FinTech to Go
