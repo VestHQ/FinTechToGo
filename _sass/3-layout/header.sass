@@ -24,6 +24,13 @@ h1
   width: 33.333%
   display: inline-block
   text-align: left
+  img
+    +size (15px)
+    margin-left: 6px
+    margin-right: 3px
+    margin-bottom: -2px
+  a:last-child
+    display: none
 
 .search
   float: left
@@ -190,7 +197,7 @@ h1
       text-align: center
       background-color: #A8DADC
       border-bottom: 2px solid #457B9D
-      padding: 6px
+      padding: 7px
       margin-bottom: -8px
       cursor: pointer
     &:hover
@@ -250,14 +257,14 @@ h1
 
 // Header Media Queries
 @media screen and (max-width: 800px)
-  header h1 b
-    display: none
-
-  header h1 span
-    display: none
-
   h1
-    padding-top: 3px
+    a:first-child
+      display: none
+    a:last-child
+      display: inline
+
+  .search span
+    display: none
 
   .dropdown-content
     white-space: normal
