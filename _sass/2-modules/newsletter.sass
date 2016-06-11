@@ -18,7 +18,11 @@ form input[type="email"], form input[type="email"], form textarea
   padding: 10px 10px 10px 90px
   box-sizing: border-box
   color: black
+  // @include transition (all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -moz-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
   -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -ms-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
   transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
 
 form textarea
@@ -41,10 +45,18 @@ form input[type="email"] + label, form input[type="email"] + label, form textare
   letter-spacing: .05em
   color: white
   background: #114B5F
+  // @include transition (all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -moz-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
   -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -ms-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
+  -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
   transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9)
-  -webkit-transform: translateZ(0) translateX(0)
-    transform: translateZ(0) translateX(0)
+  @include transform (translatez(0) translateX(0))
+  // -moz-transform: translateZ(0) translateX(0)
+  // -webkit-transform: translateZ(0) translateX(0)
+  // -ms-transform: translateZ(0) translateX(0)
+  // -o-transform: translateZ(0) translateX(0)
+  //   transform: translateZ(0) translateX(0)
 
 form textarea + label
   width: 100%
@@ -56,12 +68,20 @@ form textarea:focus
   padding-top: 10px
 
 form input[type="email"]:focus + label, form input[type="email"]:focus + label
-  -webkit-transform: translateZ(0) translateX(-100%)
-    transform: translateZ(0) translateX(-100%)
+  @include transform (translateZ(0) translateX(-100%))
+  // -moz-transform: translateZ(0) translateX(-100%)
+  // -webkit-transform: translateZ(0) translateX(-100%)
+  // -ms-transform: translateZ(0) translateX(-100%)
+  // -o-transform: translateZ(0) translateX(-100%)
+  //   transform: translateZ(0) translateX(-100%)
 
 form textarea:focus + label
-  -webkit-transform: translateZ(0) translateY(-100%)
-    transform: translateZ(0) translateY(-100%)
+  @include transform (translateZ(0) translateY(-100%))
+  // -moz-transform: translateZ(0) translateY(-100%)
+  // -webkit-transform: translateZ(0) translateY(-100%)
+  // -ms-transform: translateZ(0) translateY(-100%)
+  // -o-transform: translateZ(0) translateY(-100%)
+  //   transform: translateZ(0) translateY(-100%)
 
 .clear input
   display: none
