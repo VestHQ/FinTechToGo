@@ -10,8 +10,8 @@ sass:
 gems: [bourbon, neat]
 
 # Site settings
-title: FinTech to Go
-description: "The fastest way to keep up with FinTech news."
+title: Fintech to Go
+description: "The fastest way to keep up with Fintech news."
 keywords: fintech, news, media
 email: tripathi@vesthq.com
 url: http://www.fintechtogo.com
